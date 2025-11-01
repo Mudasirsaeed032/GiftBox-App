@@ -23,8 +23,17 @@ export default function Newsletter({ onSubscribe, className = "" }: Props) {
       body: JSON.stringify({ email: e }),
     });
     if (!res.ok) {
-      const t = await res.text().catch(() => "");
-      throw new Error(t || "Failed to subscribe");
+      // Try to parse JSON error first, fall back to text
+      let errorMsg = "Failed to subscribe";
+      try {
+        const jsonErr = await res.json();
+        errorMsg = jsonErr.error || jsonErr.message || errorMsg;
+      } catch {
+        const textErr = await res.text().catch(() => "");
+        errorMsg = textErr || errorMsg;
+      }
+      console.error("Newsletter subscription error:", errorMsg);
+      throw new Error(errorMsg);
     }
   }
 
@@ -53,7 +62,7 @@ export default function Newsletter({ onSubscribe, className = "" }: Props) {
   return (
     <section className={`my-20 ${className}`}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="rounded-3xl border border-gray-200 bg-white p-6 sm:p-10 shadow-sm">
+        <div className=" bg-white p-6 sm:p-10">
           <div className="mx-auto max-w-2xl text-center">
             <div className="inline-flex items-center rounded-full border px-3 py-1 text-xs font-semibold">
               Newsletter

@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import { Menu, X, Search, Heart, ShoppingCart, User, ChevronDown } from "lucide-react"
-import logo from '../../../public/logo.png'
+
 
 interface SubmenuItem {
   name: string
@@ -69,7 +69,7 @@ export default function Navbar(){
             <div className="flex-shrink-0">
               <Link to="/" className="flex items-center gap-3 group">
                 <img
-                  src={logo}
+                  src="/logo.png"
                   alt="GiftBox Logo"
                   className="h-10 w-auto object-contain group-hover:scale-105 transition-all duration-300"
                 />
