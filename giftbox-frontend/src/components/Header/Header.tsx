@@ -70,7 +70,7 @@ export default function Navbar(){
               <Link to="/" className="flex items-center gap-3 group">
                 <img
                   src="/logo.png"
-                  alt="GiftBox Logo"
+                  alt="GiftStop Logo"
                   className="h-10 w-auto object-contain group-hover:scale-105 transition-all duration-300"
                 />
               </Link>

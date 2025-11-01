@@ -18,7 +18,7 @@ const Hero = ({
       <div className="absolute inset-0">
         <img
           src={imageUrl}
-          alt="Happy unboxing moments and beautiful gift boxes"
+          alt="Happy unboxing moments and beautiful gift stops"
           className="h-full w-full object-cover"
           loading="eager"
         />
@@ -56,7 +56,7 @@ const Hero = ({
                 textShadow: "0 2px 15px rgba(0,0,0,0.5)",
               }}
             >
-              Create personalized gift boxes filled with love, care, and premium products that make every occasion unforgettable.
+              Create personalized gift stops filled with love, care, and premium products that make every occasion unforgettable.
             </p>
 
             {/* Buttons */}
@@ -67,7 +67,7 @@ const Hero = ({
             >
               <button className="group px-5 py-2.5 bg-gradient-to-r from-pink-500 via-pink-600 to-purple-600 text-white text-base font-medium rounded-lg hover:from-pink-600 hover:via-pink-700 hover:to-purple-700 hover:shadow-lg hover:scale-105 transition-all duration-200 flex items-center justify-center gap-2">
                 <Sparkles className="w-4 h-4 group-hover:rotate-12 transition-transform" />
-                <span>Build Your Own Gift Box</span>
+                <span>Build Your Own Gift Stop</span>
               </button>
 
               <button className="group px-5 py-2.5 bg-white/95 backdrop-blur-sm text-gray-900 text-base font-medium rounded-lg hover:bg-white hover:shadow-lg hover:scale-105 transition-all duration-200 flex items-center justify-center gap-2 border border-gray-200">

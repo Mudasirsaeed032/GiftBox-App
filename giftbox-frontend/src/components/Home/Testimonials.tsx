@@ -101,7 +101,7 @@ export default function Testimonials() {
             What our customers say
           </h2>
           <p className="text-center mt-5 opacity-75">
-            Real stories from people who built their perfect gift box.
+            Real stories from people who built their perfect gift stop.
           </p>
         </motion.div>
 

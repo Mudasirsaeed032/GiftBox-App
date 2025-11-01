@@ -31,6 +31,7 @@ export const router = createBrowserRouter([
             { path: "about", element: <About /> },
             { path: "contact", element: <Contact /> },
             { path: "auth", element: <AuthPage /> },
+            { path: "account", element: <AuthPage /> },
         ],
     },
 ]);

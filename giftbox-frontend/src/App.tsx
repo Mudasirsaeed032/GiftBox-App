@@ -33,7 +33,7 @@ export default function App() {
 
   return (
     <div className="p-6 max-w-3xl mx-auto">
-      <h1 className="text-2xl font-bold mb-4">GiftBox – React + Node + Supabase</h1>
+  <h1 className="text-2xl font-bold mb-4">GiftStop – React + Node + Supabase</h1>
 
       <div className="mb-6 space-y-2">
         <div className="text-sm text-gray-600">Logged in? {sessionToken ? 'Yes' : 'No'}</div>

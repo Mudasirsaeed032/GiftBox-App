@@ -12,3 +12,17 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Make pointer cursor for interactive elements globally
+   - links (<a>) and typical button controls
+   - inputs that act as buttons
+   - elements with role="button"
+*/
+a, button, input[type="button"], input[type="submit"], [role="button"] {
+  cursor: pointer;
+}
+
+/* Keep default text cursor for inputs/textareas while their controls (submit) are pointer */
+input, textarea, select {
+  cursor: text;
+}

@@ -16,10 +16,10 @@ export default function Footer() {
           <div>
             <Link to="/" className="inline-flex items-baseline gap-1">
               <span className="text-xl font-extrabold tracking-tight">Gift</span>
-              <span className="text-xl font-extrabold tracking-tight text-pink-600">Box</span>
+              <span className="text-xl font-extrabold tracking-tight text-pink-600">Stop</span>
             </Link>
             <p className="mt-4 text-sm text-gray-600">
-              Thoughtful, customizable gift boxes—curated with love. Build your own in minutes
+              Thoughtful, customizable gift stops—curated with love. Build your own in minutes
               and make every moment memorable.
             </p>
 
@@ -27,8 +27,8 @@ export default function Footer() {
             <div className="mt-4 space-y-2 text-sm text-gray-700">
               <div className="flex items-center gap-2">
                 <Mail className="size-4 text-pink-600" />
-                <a href="mailto:hello@giftbox.pk" className="hover:underline">
-                  hello@giftbox.pk
+                <a href="mailto:hello@giftstop.pk" className="hover:underline">
+                  hello@giftstop.pk
                 </a>
               </div>
               <div className="flex items-center gap-2">
@@ -56,7 +56,7 @@ export default function Footer() {
             <h4 className="text-sm font-semibold tracking-wide text-gray-900">Quick Links</h4>
             <ul className="mt-4 space-y-2 text-sm text-gray-700">
               <li><Link to="/shop" className="hover:text-pink-600">Shop</Link></li>
-              <li><Link to="/build" className="hover:text-pink-600">Build Your Gift Box</Link></li>
+              <li><Link to="/build" className="hover:text-pink-600">Build Your Gift Stop</Link></li>
               <li><Link to="/about" className="hover:text-pink-600">About</Link></li>
               <li><Link to="/contact" className="hover:text-pink-600">Contact</Link></li>
             </ul>
@@ -98,7 +98,7 @@ export default function Footer() {
 
         {/* Bottom note */}
         <div className="flex flex-col items-center justify-between gap-3 text-xs text-gray-600 sm:flex-row">
-          <p>© {year} GiftBox. All rights reserved.</p>
+          <p>© {year} GiftStop. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <Link to="/legal/privacy" className="hover:text-pink-600">Privacy Policy</Link>
             <Link to="/legal/terms" className="hover:text-pink-600">Terms of Service</Link>

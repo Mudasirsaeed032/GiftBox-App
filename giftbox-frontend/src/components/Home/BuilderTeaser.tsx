@@ -3,7 +3,7 @@ import { Box, Gift, PlusCircle, Sparkles, Wand2 } from "lucide-react";
 
 const previewItems = [
   {
-    label: "Gift Box",
+  label: "Gift Stop",
     image: "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=400&auto=format&fit=crop",
   },
   {
@@ -39,12 +39,12 @@ export default function BuilderTeaser() {
               <div className="inline-flex items-center gap-2 px-4 py-2 mb-5 bg-gradient-to-r from-pink-100 to-purple-100 rounded-full">
                 <Sparkles className="w-4 h-4 text-pink-600" />
                 <span className="text-sm font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-600">
-                  Gift Box Builder
+                  Gift Stop Builder
                 </span>
               </div>
               
               <h2 id="builder-teaser" className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900">
-                Create Your Perfect Gift Box in{" "}
+                Create Your Perfect Gift Stop in{" "}
                 <span className="bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
                   3 Easy Steps
                 </span>
