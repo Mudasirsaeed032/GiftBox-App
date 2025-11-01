@@ -53,11 +53,14 @@ export default function App() {
         <div className="text-sm text-gray-600">Logged in? {sessionToken ? 'Yes' : 'No'}</div>
       </div>
 
-      <div className="flex gap-3 mb-6">
+      <div className="flex gap-3 mb-6 items-center">
         <button className="border px-3 py-2 rounded" onClick={loadProducts}>Load Products</button>
         <button className="border px-3 py-2 rounded" onClick={loadMyOrders} disabled={!sessionToken}>
           Load My Orders (Auth)
         </button>
+        {!sessionToken && (
+          <a href="/auth" className="text-sm underline ml-2">Sign in / Sign up</a>
+        )}
       </div>
 
       <ul className="space-y-2">
