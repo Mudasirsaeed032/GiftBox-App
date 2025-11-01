@@ -9,11 +9,6 @@ export default class ErrorBoundary extends React.Component<{ children: React.Rea
     return { hasError: true, error };
   }
 
-  componentDidCatch(error: Error, info: any) {
-    // You can log the error to an error reporting service here
-    // console.error('Uncaught error:', error, info);
-  }
-
   render() {
     if (this.state.hasError) {
       return (

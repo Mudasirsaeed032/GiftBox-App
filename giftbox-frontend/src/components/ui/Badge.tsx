@@ -1,5 +1,3 @@
-import React from "react";
-
 type Props = { value: number; className?: string };
 
 export default function Badge({ value, className = "" }: Props) {
