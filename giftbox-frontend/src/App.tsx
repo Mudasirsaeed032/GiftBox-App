@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { supabase } from './lib/supabase';
 
 export default function App() {
-  const [email, setEmail] = useState('');
   const [sessionToken, setSessionToken] = useState<string | null>(null);
   const [products, setProducts] = useState<any[]>([]);
 
@@ -17,11 +16,7 @@ export default function App() {
     return () => sub.subscription.unsubscribe();
   }, []);
 
-  async function signIn() {
-    const { error } = await supabase.auth.signInWithOtp({ email, options: { emailRedirectTo: window.location.origin }});
-    if (error) alert(error.message);
-    else alert('Check your email for the magic link!');
-  }
+  // signIn removed: magic-link UI handled on dedicated auth page
 
   async function loadProducts() {
     const res = await fetch(`${import.meta.env.VITE_API_BASE}/api/products`);
@@ -41,15 +36,6 @@ export default function App() {
       <h1 className="text-2xl font-bold mb-4">GiftBox – React + Node + Supabase</h1>
 
       <div className="mb-6 space-y-2">
-        <input
-          className="border p-2 rounded w-full"
-          placeholder="you@example.com"
-          value={email}
-          onChange={e => setEmail(e.target.value)}
-        />
-        <button className="bg-black text-white px-4 py-2 rounded" onClick={signIn}>
-          Sign in with Magic Link
-        </button>
         <div className="text-sm text-gray-600">Logged in? {sessionToken ? 'Yes' : 'No'}</div>
       </div>
 
